@@ -1,12 +1,13 @@
 {
-  "name": "ZCYBlog",
+  "name": "zcyblog",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "init": "npm link"
+    "init": "npm link",
+    "publish": "git add . && git commit -a --allow-empty-message -m '' && git push"
   },
   "bin": {
     "blog": "./bin/index.cjs"

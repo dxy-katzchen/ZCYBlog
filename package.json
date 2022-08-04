@@ -1,0 +1,31 @@
+{
+  "name": "ZCYBlog",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "init": "npm link"
+  },
+  "bin": {
+    "blog": "./bin/index.cjs"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.11",
+    "pinia": "^2.0.16",
+    "pinia-plugin-persist": "^1.0.0",
+    "vue": "^3.2.37",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@modyfi/vite-plugin-yaml": "^1.0.2",
+    "@vitejs/plugin-vue": "2.3.3",
+    "commander": "^9.4.0",
+    "highlight.js": "^11.6.0",
+    "markdown-it-imsize": "^2.0.1",
+    "rollup-plugin-svg-sprites": "^1.2.4",
+    "vite": "2.9.9",
+    "vite-plugin-md": "^0.18.1"
+  }
+}

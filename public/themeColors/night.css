@@ -1,0 +1,18 @@
+:root {
+  --selection-background: rgb(255, 255, 255);
+  --selection-color: rgb(91, 228, 91);
+  --banner-brightness: .8;
+  --drawer-target: #343a40;
+  --drawer-no-target: rgb(90, 89, 89);
+  --font-color-normal: #fff;
+  --home-background: #333;
+  --loading-color-1: #333;
+  --loading-color-2: #666;
+  --wave-brightness: 0;
+  --mdbody-background: #343a40;
+  --mdbody-shadow: #666;
+  --toc-background: #576e74;
+  --post-banner-background: rgba(0, 0, 0, 0.5);
+  --posts-background: #333;
+  --post-shadow: #16181a;
+}

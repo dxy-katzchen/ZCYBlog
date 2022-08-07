@@ -74,7 +74,7 @@ export default {
     isRight ? $style.rightContainer : '',
     isTarget ? $style.targetContainer : ''
   ]">
-    <div :class="[$style.main, 'scrollY']">
+    <div :class="$style.main">
       <router-view :name="data.name" />
     </div>
     <div :class="$style.control">
@@ -92,12 +92,24 @@ export default {
   </div>
 </template>
 
+<style scoped>
+.markdown-body {
+  overflow: scroll !important;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+.markdown-body::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
 <style module>
 .container {
   z-index: var(--z);
   pointer-events: none;
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100vh - 60px);
   position: fixed;
   top: 30px;
   display: flex;
@@ -135,19 +147,14 @@ export default {
 }
 
 .main {
-  flex-grow: 1;
+  width: calc(100% - 90px);
   padding: 30px 30px 30px 60px;
-  margin-bottom: 5px;
   border-radius: 0 20px 20px 0;
   background-color: var(--drawer-target);
   pointer-events: all;
-  direction: rtl;
   display: flex;
 }
 
-.main>:first-child {
-  direction: ltr;
-}
 
 .rightContainer .main {
   box-shadow: var(--drawer-no-target) 2px 2px 5px;

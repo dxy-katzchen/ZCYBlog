@@ -108,7 +108,7 @@ export default {
 .container {
   z-index: var(--z);
   pointer-events: none;
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - 60px);
   position: fixed;
   top: 30px;
@@ -116,7 +116,7 @@ export default {
 }
 
 .leftContainer {
-  right: calc(100% - 100px);
+  right: calc(100% - 60px);
   animation: containerRightToLeft var(--t);
 }
 
@@ -126,7 +126,7 @@ export default {
   }
 
   100% {
-    right: calc(100% - 100px);
+    right: calc(100% - 60px);
   }
 }
 
@@ -138,7 +138,7 @@ export default {
 
 @keyframes containerLeftToRight {
   0% {
-    right: calc(100% - 100px);
+    right: calc(100% - 60px);
   }
 
   100% {
@@ -197,7 +197,7 @@ export default {
 
 
 .control {
-  width: 90px;
+  width: 60px;
   position: relative;
   display: flex;
   align-items: center;
@@ -222,7 +222,6 @@ export default {
 
 .control>span:nth-child(2) {
   width: 60px;
-  margin-left: 35px;
   height: 100%;
   pointer-events: all;
   display: flex;
